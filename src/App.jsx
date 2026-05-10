@@ -11,10 +11,12 @@ import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import GridBackground from './components/GridBackground'
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
+      <Analytics />
       <Cursor />
       <GridBackground />
       <Navbar />
